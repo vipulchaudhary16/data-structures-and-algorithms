@@ -1,3 +1,14 @@
+# Stack
+
+* Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+#
+
+### Here is Implementation code in C++
+<p></p>
+
+## Class Implementation
+
+```cpp
 #include<iostream>
 using namespace std;
 
@@ -11,7 +22,10 @@ class Stack{
             this->capacity = capacity;
             this->arr = (int *)malloc(sizeof(int) * capacity);
         }
+```
 
+## Check wheather stack is Full or Empty
+```cpp
     bool isEmpty(){
         return top == -1;
     }
@@ -19,7 +33,10 @@ class Stack{
     bool isFull(){
         return top+1 == capacity;
     }
+```
 
+## To add data into stack
+```cpp
     void push(int data){
         if(isFull()){
             cout<<"stack overflow: "<<endl;
@@ -28,7 +45,9 @@ class Stack{
             arr[++top] = data;
         }
     }
-
+```
+## To remove top element from stack
+```cpp 
     int pop(){
         if(isEmpty()){
             cout<<"stack underflow: "<<endl;
@@ -36,17 +55,9 @@ class Stack{
         }
         return arr[top--];
     }
-
-    void print_stack(){
-    for (int i = 0; i<=top; i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
-}
-};
-
-
-
+```
+## Driver Code
+```cpp
 int main()
 {
     Stack s(5);
@@ -59,3 +70,4 @@ int main()
     s.print_stack();
     return 0;
 }
+```
