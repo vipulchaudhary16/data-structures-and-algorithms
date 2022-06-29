@@ -1,7 +1,5 @@
 ## [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) 
 
-#
-
 ```cpp
 class Solution
 {
