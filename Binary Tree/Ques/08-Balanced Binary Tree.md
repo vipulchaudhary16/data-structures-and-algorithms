@@ -42,8 +42,7 @@ public:
         pair<bool, int> right = isBalanced_fast(root -> right);
         
         return {left.first && right.first && abs(left.second - right.second) <= 1,
-               (max(left.second, right.second) + 1)
-               };
+               (max(left.second, right.second) + 1)};
     }
     bool isBalanced(TreeNode* root) {
         return isBalanced_fast(root).first;

@@ -1,4 +1,4 @@
-# [Diameter of a Binary Tree](https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/)
+# [Diameter of a Binary Tree](https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1)
 
 ## Using height concept
 ```cpp
