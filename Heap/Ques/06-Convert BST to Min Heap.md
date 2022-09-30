@@ -10,10 +10,12 @@ void inorder(BinaryTreeNode * root, vector<int> &v){
 }
 
 void solve(BinaryTreeNode * &root, vector<int> in, int &i){
+    //pre order traversal
     if(!root) return;
     
     root -> data = in[i];
     i++;
+
     solve(root->left, in, i);
     solve(root -> right, in, i);
 }
