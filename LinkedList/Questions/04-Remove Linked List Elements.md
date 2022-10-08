@@ -1,4 +1,4 @@
-## [Reverse First K elements of Queue ](https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1/) 
+## [Remove Linked List Elements ](https://leetcode.com/problems/remove-linked-list-elements/) 
 
 ```cpp
 class Solution {

@@ -95,6 +95,5 @@ int main()
     h.print();
     h.deleteRoot();
     h.print();
-    
     return 0;
 }
