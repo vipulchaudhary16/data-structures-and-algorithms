@@ -1,5 +1,10 @@
 ## Topic Wise DSA Quentions and Their Solution in C++
 
+## Contribution Rule
+File name convention:
+  - sr_no-question name.md
+    - Eg: 45-Merge K Sorted List.md
+
 File Structure:
   - It should be .md file
   - On top Header tag with problem link on any platform like Leetcode, GFG etc
