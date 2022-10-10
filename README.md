@@ -1,4 +1,4 @@
-## Topic Wise DSA Quentions and Their Solution in C++
+## Topic Wise DSA Questions and Their Solution in C++
 
 ## Contribution Rule
 - Add Solution for those Questions which are not present in this Repository
