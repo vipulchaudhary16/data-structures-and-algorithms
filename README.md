@@ -18,10 +18,10 @@ File Structure Example :
 ```cpp
 Code Here
 ```
-```
 ![image](https://user-images.githubusercontent.com/77090657/193395417-14e3b508-019d-442e-8f0a-c6b5e0c76278.png)
 
 ## Our Contributors
+
 <a href="https://github.com/vipulchaudhary16/Data-Structures-And-Algorithms/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=vipulchaudhary16/Data-Structures-And-Algorithms" />
 </a>
