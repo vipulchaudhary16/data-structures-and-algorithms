@@ -1,3 +1,7 @@
+// # [Inverted Number Pattern](https://github.com/Nitin-GH/Coding-ninjas/blob/master/Lecture%205%20Patterns%202/Inverted%20Number%20Pattern)
+// cpp
+
+
 #include<iostream>
 using namespace std;
 
