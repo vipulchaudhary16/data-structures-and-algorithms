@@ -1,9 +1,4 @@
-# Program of Pancake sorting in C++
-
-// C++ program to
-// sort array using
-// pancake sort
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 /* Reverses arr[0..i] */
@@ -25,11 +20,11 @@ void flip(int arr[], int i)
 // arr[0..n-1]
 int findMax(int arr[], int n)
 {
-int mi, i;
-for (mi = 0, i = 0; i < n; ++i)
-	if (arr[i] > arr[mi])
+	int mi, i;
+	for (mi = 0, i = 0; i < n; ++i)
+		if (arr[i] > arr[mi])
 			mi = i;
-return mi;
+	return mi;
 }
 
 // The main function that
@@ -42,7 +37,7 @@ void pancakeSort(int *arr, int n)
 	// reduce current size
 	// by one
 	for (int curr_size = n; curr_size > 1;
-							--curr_size)
+		 --curr_size)
 	{
 		// Find index of the
 		// maximum element in
@@ -54,7 +49,7 @@ void pancakeSort(int *arr, int n)
 		// current array if
 		// it's not already
 		// at the end
-		if (mi != curr_size-1)
+		if (mi != curr_size - 1)
 		{
 			// To move at the end,
 			// first move maximum
@@ -64,7 +59,7 @@ void pancakeSort(int *arr, int n)
 			// Now move the maximum
 			// number to end by
 			// reversing current array
-			flip(arr, curr_size-1);
+			flip(arr, curr_size - 1);
 		}
 	}
 }
@@ -74,20 +69,19 @@ void pancakeSort(int *arr, int n)
 void printArray(int arr[], int n)
 {
 	for (int i = 0; i < n; ++i)
-		cout<< arr[i]<<" ";
+		cout << arr[i] << " ";
 }
 
 // Driver program to test above function
 int main()
 {
 	int arr[] = {23, 10, 20, 11, 12, 6, 7};
-	int n = sizeof(arr)/sizeof(arr[0]);
+	int n = sizeof(arr) / sizeof(arr[0]);
 
 	pancakeSort(arr, n);
 
-	cout<<"Sorted Array "<<endl;
+	cout << "Sorted Array " << endl;
 	printArray(arr, n);
 
 	return 0;
 }
-

@@ -36,8 +36,5 @@ void countSort(char arr[])
 // Driver code
 int main() {
 
-	countSort(arr);
-	cout << "Sorted character array is " << arr;
-	return 0;
 }
 

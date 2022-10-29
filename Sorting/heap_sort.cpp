@@ -6,7 +6,6 @@ void max_heapify(int A[] , int i , int size){
     int R = 2 * i + 2;
 
     // parent of i will be at i/2 - 1
-
     int largest;
 
     // L < size means L is not leaf and A[L] > A[i] means there is bigger number on left side

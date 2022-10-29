@@ -1,4 +1,3 @@
-# Program of Gnome Sort in C++:
 // A C++ Program to implement Gnome Sort
 #include <iostream>
 using namespace std;
@@ -8,12 +7,14 @@ void gnomeSort(int arr[], int n)
 {
 	int index = 0;
 
-	while (index < n) {
+	while (index < n)
+	{
 		if (index == 0)
 			index++;
 		if (arr[index] >= arr[index - 1])
 			index++;
-		else {
+		else
+		{
 			swap(arr[index], arr[index - 1]);
 			index--;
 		}
@@ -33,7 +34,7 @@ void printArray(int arr[], int n)
 // Driver program to test above functions.
 int main()
 {
-	int arr[] = { 34, 2, 10, -9 };
+	int arr[] = {34, 2, 10, -9};
 	int n = sizeof(arr) / sizeof(arr[0]);
 
 	gnomeSort(arr, n);
