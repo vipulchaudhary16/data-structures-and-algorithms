@@ -79,25 +79,29 @@ public:
 int main()
 {
     Graph g;
-    g.addEdge(1, 5, 12);
-    g.addEdge(1, 2, 3);
-    g.addEdge(1, 3, 2);
-    g.addEdge(2, 3, 3);
-    g.addEdge(3, 4, 8);
-    g.addEdge(4, 5, 5);
+    g.addEdge(0,1,5);
+    g.addEdge(0,2,3);
+    g.addEdge(1,2,2);
+    g.addEdge(1,3,6);
+    g.addEdge(2,3,7);
+    g.addEdge(2,4,4);
+    g.addEdge(2,5,2);
+    g.addEdge(3,4,-1);
+    g.addEdge(4,5,-2);
+
     // g.printAdjList();
 
     int n = 5;
     stack<int> st;
     unordered_map<int, bool> visited;
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i <= n; i++)
     {
         if (!visited[i])
             g.dfs(i, visited, st);
     }
-    g.printTopologicalSort(st);
+    g.printTopologicalSort(st); 
 
-    int source = 4;
+    int source = 0;
     g.getShortestPaths(source, n, st);
     return 0;
 }
