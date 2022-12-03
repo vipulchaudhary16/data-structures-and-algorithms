@@ -20,6 +20,7 @@ public:
         path.pop_back();
         
     }
+    
     int goodNodes(TreeNode* root) {
         int c = 0;
         vector<int> path;
