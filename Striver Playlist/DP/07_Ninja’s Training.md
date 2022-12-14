@@ -108,3 +108,41 @@ TC : O(n * 3 * 4)
 SC : O(n*4)
 */
 ```
+
+
+```Space optimization```
+
+```cpp
+int ninjaTraining(int n, vector<vector<int>> &points)
+{
+    vector<int> lastDay(4,0);
+    
+    lastDay[0] = max(points[0][1], points[0][2]);
+    lastDay[1] = max(points[0][0], points[0][2]);
+    lastDay[2] = max(points[0][0], points[0][1]);
+    lastDay[3] = max(points[0][0], max(points[0][1], points[0][2]));
+    
+    for(int day = 1; day < n; day++){
+        vector<int> curr(4,0);
+
+        for(int last = 0; last < 4; last++){
+            for(int task = 0; task < 3; task++){
+                if(task != last)
+                {
+                    int point = points[day][task] + lastDay[task];
+                    curr[last] = max(curr[last], point);
+                }
+            }
+        }
+
+        lastDay = curr;
+    }
+    
+    return dp[n-1][3];
+}
+
+/*
+TC : O(n*4*3)
+SC : O(4)
+*/
+```
