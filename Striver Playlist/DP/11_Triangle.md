@@ -9,7 +9,7 @@ public:
     int f(int i, int j, vector<vector<int>>& triangle, vector<vector<int>>& dp){
         if(i == n-1) return triangle[i][j]; //if we have reached last row that is our destination
         
-        if(dp[i][j] != -1) return dp[i][j];
+        if(dp[i][j] != -1) return dp[i][j]; 
         
         int down = triangle[i][j] + f(i+1, j, triangle, dp); //move to down in next row
         int diag_right = triangle[i][j] + f(i+1, j+1, triangle, dp); //move to diagonally right to next row
@@ -46,6 +46,31 @@ public:
         }
         
         return dp[0][0];
+    }
+};
+```
+
+```Space Optimization```
+
+```cpp
+class Solution {
+public:
+    int minimumTotal(vector<vector<int>>& triangle) {
+        int n = triangle.size();
+        vector<int> prev(n, 0);
+        for(int i = 0; i < n; i++) prev[i] = triangle[n-1][i];
+        
+        for(int i = n-2; i >= 0; i--){
+            vector<int> curr(n,0);
+            for(int j = i; j >= 0; j--){
+                int down = triangle[i][j] + prev[j];
+                int diag = triangle[i][j] + prev[j+1];
+                curr[j] = min(down, diag);
+            }
+            prev = curr;
+        }
+        
+        return prev[0];
     }
 };
 ```
