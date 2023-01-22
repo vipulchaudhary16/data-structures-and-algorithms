@@ -14,7 +14,7 @@ public:
         return dp[ind][target] = take || notTake;
     }
 
-    bool canPartition(vector<int>& nums) {
+    bool canPartition(vector<int>& nums) { 
         int n = nums.size();
         int totalSum = 0;
         for(int i : nums) totalSum += i;
