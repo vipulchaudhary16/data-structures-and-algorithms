@@ -22,7 +22,7 @@ void dfs(int node, int &parent, int &timer, vector<int> &disc, vector<int> &low,
             //back edge
             low[node] = min(low[node], disc[adj]);
         }
-    }
+    }`
 }
 
 vector<vector<int>> findBridges(vector<vector<int>> &edges, int v, int e) {
