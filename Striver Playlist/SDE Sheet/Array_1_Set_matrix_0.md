@@ -1,14 +1,12 @@
 ### [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/)
 
 ```Brute force approach```
-```
 We have to assume that all elements are greater than 0
 
 * Traverse the matrix
 * If we encounter a 0, then make every element of that row and column, which are != 0, to -1
 * Traverse the matrix again
 * If we encounter a -1, then make that element to 0
-```
 
 ```Better Approach```
 ```cpp
@@ -41,17 +39,15 @@ public:
 ```
 
 ```Space Optimization```
-```
 * Using first row and first column as a flag
 * here we need extra flag for col0 because we are using first row as a flag
-
-1 1 1 1
-0 0 1 1
-1 1 1 1
-
-try this example to understand the code
+    ```
+    1 1 1 1
+    0 0 1 1
+    1 1 1 1
+    ```
+  try this example to understand the code
 one time try without using col0 flag
-```
 ```cpp
 class Solution {
 public:
