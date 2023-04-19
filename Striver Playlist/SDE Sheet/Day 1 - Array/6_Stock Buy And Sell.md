@@ -1,5 +1,6 @@
-### [Stock Buy And Sell](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
-
+### [Stock Buy And Sell](https://leetcode.com/653p42
+roblems/best-time-to-buy-and-sell-stock/description/)
+ mc3s
 * find min price and max profit every time
 
 ```cpp

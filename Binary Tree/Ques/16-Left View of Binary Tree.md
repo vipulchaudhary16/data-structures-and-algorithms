@@ -1,4 +1,4 @@
-# [Left View of Binary Tree](https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree)
+# [Left View of Binary Tree](https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1)
 
 ```cpp
 vector<int> leftView(Node *root)
@@ -13,7 +13,6 @@ vector<int> leftView(Node *root)
 
     while (!q.empty())
     {
-
         int size = q.size();
         for (int i = 0; i < size; i++)
         {

@@ -20,7 +20,7 @@ public:
 };
 ```
 
-## Itrerative
+## Iterative
 ```cpp
 class Solution {
 public:
